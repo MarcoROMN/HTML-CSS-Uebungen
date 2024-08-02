@@ -28,9 +28,35 @@ body {
 
 .card h2 {
   background: #fff;
-  padding: 5px;
+  padding: 10px;
 }
 
 .row {
   display: block;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: red;
+  }
+  h2 {
+    font-size: 24;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background: yellow;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
 }
